@@ -1,0 +1,64 @@
+.footer {
+  background-color: #202124;
+  margin-top: 20px;
+  padding: 30px 40px;
+}
+
+/* 1. Desktop: Clean 5-column grid without width math */
+.footer .foot-container {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.footer .foot-container .item h1 {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.footer .foot-container .item .qr {
+  max-width: 800px;
+  width: 100%;
+}
+
+.footer .foot-container .item .qr img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.footer .foot-container .item .for-link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer .foot-container .item .for-link a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer .foot-container .item .payment {
+  max-width: 180px;
+}
+
+.footer .foot-container .item .payment img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+hr {
+  margin-top: 30px;
+  border: none;
+  border-top: 1px solid #333333; /* Soft dark gray line */
+}
+/* end of footer */
