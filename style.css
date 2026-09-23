@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-container{
+    max-width: 1000px;
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.item-container .item{
+    box-shadow: 0px 0px 10px gray;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.item-container .item:hover{
+    transform: scale(1.05);
+    z-index: 10;
+}
+.item-container .item .img-box{
+    position: relative;
+    height: 170px;
+}
+.item-container .item .img-box .discount{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    background-color: red;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: white;
+}
+.item-container .item .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item-container .item .txt-box{
+    padding:10px 15px;
+}
+.item-container .item .txt-box h1{
+    font-size: 20px;
+    text-align: center;
+}
+.item-container .item .txt-box ul{
+    padding: 0px 10px;
+    margin: 3px;
+}
+.item-container .item .txt-box ul li{
+    font-size: 14.5px;
+}
+.item-container .item .txt-box .btn{
+    width: 100%;
+    background-image: linear-gradient(135deg, #2563eb, #9333ea);
+    padding: 10px 15px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.item-container .item .txt-box .btn button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}

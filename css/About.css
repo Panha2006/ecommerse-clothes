@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* our story */
+.story-banner {
+  background: linear-gradient(90deg, #3730a3, #5b21b6, #7c3aed);
+  position: relative;
+  height: 240px;
+}
+.story-banner .text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.story-banner .text-box .title {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+}
+.story-banner .text-box .txt {
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.btn .b1 {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 12px 18px;
+  background-color: #ffff;
+  color: blue;
+  border-radius: 10px;
+}
+.btn .b2 {
+  border: 2px solid white;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+}
+
+/* our mission */
+.txt-box {
+  text-align: center;
+  margin-top: 40px;
+}
+.txt-box .desc {
+  color: #6b7280;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* service-container */
+.service-container {
+  max-width: 1000px;
+  margin: auto;
+  width: 90%;
+  /* background-color: pink; */
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service-container .box .title {
+  color: #4f46e5;
+  font-weight: 900;
+  font-size: 25px;
+  text-align: center;
+}
+.service-container .box p {
+  color: #2c2c2c;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* core value */
+.core-values {
+  padding: 60px 0;
+}
+.core-values .title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+.core-values .values-container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.core-values .values-container .value-item {
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 25px;
+}
+.core-values .values-container .value-item .icon-box {
+  width: 50px;
+  height: 50px;
+  background-color: #e0e7ff; /* light indigo, matches your palette */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.core-values .values-container .value-item .icon-box i {
+  color: #4f46e5;
+  font-size: 20px;
+}
+.core-values .values-container .value-item .value-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.core-values .values-container .value-item .value-txt {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* our story */
+.story-tab {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  /* background-color: pink; */
+}
+.story-tab .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.story-tab .nav-item .item {
+  display: flex;
+  gap: 5px;
+  color: white;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  padding: 10px 15px;
+  border-radius: 7px;
+}
+.story-tab .nav-item .item.m1 {
+  background: transparent;
+  color: #374151;
+}
+
+/* begin story */
+.begin-story {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  /* background-color: pink; */
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px gray;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
