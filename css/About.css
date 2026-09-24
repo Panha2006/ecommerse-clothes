@@ -213,14 +213,246 @@
   gap: 20px;
 }
 .profile-team .member {
-  background-color: green;
+  /* background-color: green; */
   display: grid;
   grid-template-rows: 70% 30%;
   height: 400px;
 }
 .profile-team .member .img-box {
-  background-color: pink;
+  position: relative;
+  overflow: hidden;
 }
-.profile-team .member .txt-box {
+.profile-team .member .img-box .social-overlay {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: bottom 0.3s ease;
+}
+.profile-team .member .img-box .social-overlay a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #374151;
+  text-decoration: none;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.profile-team .member .img-box .social-overlay a:hover {
+  background-color: #4f46e5;
+  color: white;
+}
+.profile-team .member .img-box:hover .social-overlay {
+  bottom: 0;
+}
+.profile-team .member .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.profile-team .member .member-txt {
+  /* background-color: yellow; */
+  margin-top: 0;
+}
+.profile-team .member .member-txt .title {
+  text-align: center;
+  margin-top: 10px;
+}
+.profile-team .member .member-txt .title .name {
+  font-size: 20px;
+  font-weight: 800;
+}
+.profile-team .member .member-txt .title .role {
+  color: #4f46e5;
+}
+.profile-team .member .member-txt .desc {
+  color: #6b7280;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/*Sustainability  */
+.Sustainability {
+  background: linear-gradient(135deg, #f8f9fc, #eceafc);
+  margin-top: 30px;
+}
+.Sustainability .sus-title {
+  text-align: center;
+  padding: 30px 0px;
+}
+.Sustainability .sus-title h1 {
+  font-size: 28px;
+  font-weight: 800;
+}
+.Sustainability .sus-title .txt {
+  color: #6b7280;
+  font-size: 14px;
+}
+.Sustainability .sustain-item {
+  max-width: 900px;
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.Sustainability .sustain-item .desc-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Sustainability .sustain-item .desc-txt .item {
+  align-items: flex-start;
+  display: flex;
+  gap: 12px;
+}
+
+.Sustainability .sustain-item .desc-txt .item .icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 15px;
+}
+
+.Sustainability .sustain-item .desc-txt .item .txt h1 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.Sustainability .sustain-item .desc-txt .item .txt .desc {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.45;
+}
+
+.Sustainability .sustain-item .desc-txt .item .icon-box.green {
+  background-color: #dcfce7;
+  color: #22c55e;
+}
+
+.Sustainability .sustain-item .desc-txt .item .icon-box.blue {
+  background-color: #dbeafe;
+  color: #3b82f6;
+}
+
+.Sustainability .sustain-item .desc-txt .item .icon-box.yellow {
+  background-color: #fef9c3;
+  color: #eab308;
+}
+
+.Sustainability .sustain-item .img-box {
   background-color: yellow;
+  min-height: 280px;
+  border-radius: 12px;
+}
+.Sustainability .sustain-item .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+/* fashion revulotion */
+.fashion-cta {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.fashion-cta .cta-container {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fashion-cta h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.fashion-cta .cta-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+/* Button Group */
+.fashion-cta .cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.fashion-cta .btn {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Solid Indigo/Purple Button */
+.fashion-cta .btn-primary {
+  background: #4f46e5;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+}
+
+.fashion-cta .btn-primary:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+/* Outline Border Button */
+.fashion-cta .btn-outline {
+  background: transparent;
+  color: #4338ca;
+  border: 1.5px solid #a5b4fc;
+}
+
+.fashion-cta .btn-outline:hover {
+  background: #f5f3ff;
+  border-color: #6366f1;
+}
+
+/* Footer note */
+.fashion-cta .cta-contact {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.fashion-cta .cta-contact span {
+  color: #6b7280;
+  font-weight: 500;
 }
