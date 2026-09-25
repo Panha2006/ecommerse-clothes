@@ -4,3 +4,7 @@
       <i class="fa-solid fa-book"></i>
       <i class="fa-solid fa-chart-line"></i>
        <i class="fa-solid fa-trophy"></i>
+         color: #111827;
+         
+  background: #4f46e5;
+    color: #9ca3af;
