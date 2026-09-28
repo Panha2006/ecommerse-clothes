@@ -1,107 +1,67 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="item-container">
-    <div class="item">
-      <div class="img-box">
-        <img src="./image/labtop.png" alt="">
-        <div class="discount">
-          -50%
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="latest-products">
+      <h2 class="section-title">Latest Product</h2>
+
+      <div class="product-grid">
+        <!-- Card Item (Repeat 4 times for your 4 columns) -->
+        <div class="product-card">
+          <div class="card-img-box">
+            <span class="badge badge-bestseller">BestSeller</span>
+            <span class="badge badge-organic">Organic</span>
+
+            <img src="./images/jacket.jpg" alt="Denim Jacket" />
+
+            <!-- Hover action icons -->
+            <div class="card-hover-icons">
+              <button class="hover-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+              <button class="hover-btn">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+              <button class="hover-btn">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="card-info">
+            <span class="category">Men • Casual T-shirt</span>
+            <h3 class="product-name">Premium Cotton T-shirt</h3>
+
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="score">4.5 (128)</span>
+            </div>
+
+            <div class="price-box">
+              <span class="current-price">$79.99</span>
+              <span class="old-price">$99.99</span>
+              <span class="save-price">save $20.00</span>
+            </div>
+
+            <div class="colors">
+              <span>Colors:</span>
+              <span class="color-dot blue"></span>
+              <span class="color-dot black"></span>
+              <span class="color-dot white"></span>
+            </div>
+
+            <button class="add-cart-btn">
+              <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+            </button>
+          </div>
         </div>
+        <!-- End Card Item -->
       </div>
-      <div class="txt-box">
-      <h1>Asus Rog <br> ZEPHYRUS G16(2024)</h1>
-      <ul>
-        <li>Intel core Ultra 9 185H</li>
-        <li>NIVIDIA GFORCE RTK 4070</li>
-        <li>16 OLED 2.5K 240HZ</li>
-        <li>32GB RAM DDRS</li>
-        <li>1TB SSD</li>
-        <li>Streak, Powerful, Portabel</li>
-      </ul>
-      <div class="btn">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <button>Add To Cart</button>
-      </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="img-box">
-        <img src="./image/labtop.png" alt="">
-        <div class="discount">
-          -50%
-        </div>
-      </div>
-      <div class="txt-box">
-      <h1>Asus Rog <br> ZEPHYRUS G16(2024)</h1>
-      <ul>
-        <li>Intel core Ultra 9 185H</li>
-        <li>NIVIDIA GFORCE RTK 4070</li>
-        <li>16 OLED 2.5K 240HZ</li>
-        <li>32GB RAM DDRS</li>
-        <li>1TB SSD</li>
-        <li>Streak, Powerful, Portabel</li>
-      </ul>
-      <div class="btn">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <button>Add To Cart</button>
-      </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="img-box">
-        <img src="./image/labtop.png" alt="">
-        <div class="discount">
-          -50%
-        </div>
-      </div>
-      <div class="txt-box">
-      <h1>Asus Rog <br> ZEPHYRUS G16(2024)</h1>
-      <ul>
-        <li>Intel core Ultra 9 185H</li>
-        <li>NIVIDIA GFORCE RTK 4070</li>
-        <li>16 OLED 2.5K 240HZ</li>
-        <li>32GB RAM DDRS</li>
-        <li>1TB SSD</li>
-        <li>Streak, Powerful, Portabel</li>
-      </ul>
-      <div class="btn">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <button>Add To Cart</button>
-      </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="img-box">
-        <img src="./image/labtop.png" alt="">
-        <div class="discount">
-          -50%
-        </div>
-      </div>
-      <div class="txt-box">
-      <h1>Asus Rog <br> ZEPHYRUS G16(2024)</h1>
-      <ul>
-        <li>Intel core Ultra 9 185H</li>
-        <li>NIVIDIA GFORCE RTK 4070</li>
-        <li>16 OLED 2.5K 240HZ</li>
-        <li>32GB RAM DDRS</li>
-        <li>1TB SSD</li>
-        <li>Streak, Powerful, Portabel</li>
-      </ul>
-      <div class="btn">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <button>Add To Cart</button>
-      </div>
-      </div>
-    </div>
-  </div>
-</body>
+    </section>
+  </body>
 </html>

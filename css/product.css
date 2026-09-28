@@ -167,7 +167,7 @@
   width: 80%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   /* background-color: yellow; */
 }
 .product-container .right-box .top-bar {
@@ -234,17 +234,14 @@
 }
 .product-container .right-box .grid {
   height: 80%;
-  /* background-color: brown; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 15px;
 }
 .product-container .right-box .grid .box {
-  height: 370px;
+  height: 400px;
   display: grid;
-  grid-template-rows: 55% 45%;
-  /* gap: 10px; */
-  /* background-color: pink; */
+  grid-template-rows: 50% 50%;
   overflow: hidden;
   box-shadow: 0px 0px 10px gray;
   border-radius: 10px;
@@ -255,23 +252,36 @@
   transform: scale(1.04);
   z-index: 1;
 }
+
+/* image area */
 .product-container .right-box .grid .box .img-box {
   background-color: white;
   position: relative;
   overflow: hidden;
 }
+.product-container .right-box .grid .box .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* icons: hidden below the image by default */
 .product-container .right-box .grid .box .img-box .link-overlay {
   position: absolute;
   bottom: -50px;
   left: 0;
   width: 100%;
-  /* background-color: pink; */
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   transition: all 0.3s ease;
+}
+/* hover on the WHOLE box slides the icons up (this is the fix) */
+.product-container .right-box .grid .box:hover .img-box .link-overlay {
+  bottom: 0;
 }
 .product-container .right-box .grid .box .img-box .link-overlay a {
   text-decoration: none;
@@ -281,7 +291,6 @@
   border-radius: 50%;
   background-color: white;
   display: flex;
-  gap: 15px;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
@@ -290,17 +299,31 @@
   background-color: #2563eb;
   color: white;
 }
-.product-container .right-box .grid .box .img-box:hover .link-overlay {
-  bottom: 0;
+
+/* badges: BestSeller / Organic */
+.product-container .right-box .grid .box .img-box .overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
 }
-.product-container .right-box .grid .box .img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
+.product-container .right-box .grid .box .img-box .overlay .seller {
+  background-color: #f97316;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 20px;
 }
+.product-container .right-box .grid .box .img-box .overlay .seller.black {
+  background-color: #1f2937;
+}
+
+/* text area */
 .product-container .right-box .grid .box .txt-box {
-  /* background-color: green; */
   padding: 10px;
 }
 .product-container .right-box .grid .box .txt-box .category {
@@ -315,7 +338,6 @@
 .product-container .right-box .grid .box .txt-box .star {
   display: flex;
   align-items: center;
-  /* gap: 2px; */
   margin-top: 5px;
 }
 .product-container .right-box .grid .box .txt-box .star i {
@@ -346,6 +368,41 @@
   font-size: 12px;
   margin-top: -4px;
 }
+
+/* color circles */
+.product-container .right-box .grid .box .txt-box .select-color {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+.product-container .right-box .grid .box .txt-box .select-color p {
+  color: #9ca3af;
+  font-size: 16px;
+}
+.product-container .right-box .grid .box .txt-box .select-color .circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.product-container .right-box .grid .box .txt-box .select-color .circle:hover {
+  transform: scale(1.2);
+}
+.product-container .right-box .grid .box .txt-box .select-color .circle.blue {
+  background-color: #1e3a8a;
+}
+.product-container .right-box .grid .box .txt-box .select-color .circle.black {
+  background-color: #000000;
+}
+.product-container .right-box .grid .box .txt-box .select-color .circle.white {
+  background-color: #ffffff;
+  border: 2px solid #d1d5db;
+}
+
+/* add to cart button */
 .product-container .right-box .grid .box .txt-box .btn {
   padding: 10px 15px;
   width: 100%;
