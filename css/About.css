@@ -285,6 +285,7 @@
 .Sustainability {
   background: linear-gradient(135deg, #f8f9fc, #eceafc);
   margin-top: 30px;
+  padding: 20px 0px;
 }
 .Sustainability .sus-title {
   text-align: center;
@@ -373,7 +374,60 @@
 }
 
 /* fashion revulotion */
-.fashion-cta {
+.fashion-container {
+  margin-top: 30px;
+}
+.fashion-container .bar-title {
+  text-align: center;
+  margin-top: 10px;
+}
+.fashion-container .bar-title .title-fashion {
+  font-size: 30px;
+  font-weight: 800;
+}
+.fashion-container .bar-title .desc-fas {
+  color: #6b7280;
+}
+.fashion-container .title-fashion .desc-fas {
+  text-align: center;
+  color: #6b7280;
+  margin-left: 10px;
+}
+.fashion-container .button-container {
+  max-width: 1000px;
+  margin: auto;
+  width: 90%;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.fashion-container .button-container .btn-1 {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background: linear-gradient(90deg, #3730a3, #5b21b6, #7c3aed);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.fashion-container .button-container .btn-2 {
+  outline: none;
+  padding: 10px 20px;
+  border: 2px solid #4f46e5;
+  background-color: transparent;
+  color: #3730a3;
+  border-radius: 10px;
+}
+.fashion-container .desc-txt {
+  color: #6b7280;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+/* .fashion-cta {
   width: 100%;
   background-color: #ffffff;
   padding: 60px 20px;
@@ -400,6 +454,6 @@
   color: #6b7280;
   line-height: 1.5;
   margin-bottom: 28px;
-}
+} */
 
 /* Button Group */

@@ -7,45 +7,104 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <title>Document</title>
   </head>
   <body>
-    <!-- start of header -->
-    <div class="container">
-      <div class="header">
-        <div class="logo">
-          <a href="">Group-4 Store</a>
+    <!-- start of top-area -->
+    <div class="top-area">
+      <!-- start of bar1 -->
+      <section class="bar-1">
+        <div class="bar-container">
+          <div class="left-box">
+            <p>🚚Free Shipping Worldwide</p>
+            <span class="divide">|</span>
+            <span>⚡Summer Sale: Up to 50% Off</span>
+            <button class="shop-btn">Shop now</button>
+          </div>
+          <div class="right-box">
+            <p class="descs">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Store Locator</span>
+            </p>
+            <p class="descs">
+              <i class="fa-solid fa-truck"></i>
+              <span>Track order</span>
+            </p>
+            <p class="descs">
+              <i class="fa-solid fa-headset"></i>
+              <span>24/7Support</span>
+            </p>
+          </div>
         </div>
-        <!-- start of nav-bar -->
-        <div class="nav-bar">
+      </section>
+      <!-- end of bar1 -->
+
+      <!-- start of header -->
+      <div class="container">
+        <div class="header">
+          <div class="logo">
+            <a href="./index.html">Group4-Store</a>
+          </div>
+
           <ul>
             <li>
-              <a href="./index.html">Home</a>
+              <a href="./index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+              </a>
             </li>
             <li>
-              <a href="./product.html">Product</a>
+              <a href="./product.html">
+                <i class="fa-solid fa-border-all"></i>
+                <span>Product</span>
+              </a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="./About.html">
+                <span>About</span>
+              </a>
             </li>
             <li>
-              <a href="./About.html">About</a>
+              <a href="./contact.html">
+                <span>Contact</span>
+              </a>
             </li>
           </ul>
-          <a href="">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </a>
-          <button class="btn">
-            <i class="fa-solid fa-bars"></i>
-          </button>
+
+          <div class="btn-container">
+            <a href="" class="btns user">
+              <button>
+                <i class="fa-regular fa-user"></i>
+              </button>
+            </a>
+            <a href="" class="btns">
+              <button>
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <span class="badge">6</span>
+            </a>
+            <a href="" class="btns">
+              <button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+              <span class="badge">10</span>
+            </a>
+          </div>
         </div>
-        <!-- end of nav-bar -->
       </div>
+      <!-- end of header -->
     </div>
-    <!-- end of header -->
+    <!-- end of top-area -->
+
     <!-- start of hero section -->
     <div class="hero-section">
       <div class="row">
@@ -57,7 +116,9 @@
           </h1>
           <p>
             Success isn't always about greatness. It's about consistency.
-            Consistent hard work gains success. Greatness will come. Restocked twice a year. When something is gone, it is gone until the next drop.
+            Consistent hard work gains success. Greatness will come. Restocked
+            twice a year. When something is gone, it is gone until the next
+            drop.
           </p>
           <a href="#" class="btn">Explore more &#8594;</a>
         </div>
@@ -426,7 +487,58 @@
     </section>
     <!-- end of more-discover -->
 
-    
+    <!--start of  explore more recommadation -->
+    <section class="explore">
+      <h1 class="explore-title">Explore Our Recommendations</h1>
+      <div class="item-box">
+        <div class="item">
+          <img src="./image/1.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="./image/2.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="./image/3.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="./image/4.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- end of explore more recommadation -->
+
+    <!-- start of for link -->
+    <div class="for-travel">
+      <div class="item-link">
+        <div class="img">
+          <img
+            src="https://zand.sgp1.cdn.digitaloceanspaces.com/catalog/banner/2026/baestu/feature-bloc-icon/shipping.png"
+            alt=""
+          />
+        </div>
+        <h1>Global Shipping</h1>
+      </div>
+      <div class="item-link">
+        <div class="img">
+          <img
+            src="https://zand.sgp1.cdn.digitaloceanspaces.com/catalog/banner/2026/baestu/feature-bloc-icon/return.png"
+            alt=""
+          />
+        </div>
+        <h1>14-Day Return Policy</h1>
+      </div>
+      <div class="item-link">
+        <div class="img">
+          <img
+            src="https://zand.sgp1.cdn.digitaloceanspaces.com/catalog/banner/2026/baestu/feature-bloc-icon/secure-payment.png"
+            alt=""
+          />
+        </div>
+        <h1>Secure Payment</h1>
+      </div>
+    </div>
+    <!-- end of link -->
+
     <!--start of  footer -->
     <footer class="footer">
       <div class="foot-container">
