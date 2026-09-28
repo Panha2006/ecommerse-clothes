@@ -13,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/contact.css" />
@@ -106,7 +108,11 @@
     <!-- end of top-area -->
 
     <!-- category banner -->
-    <section class="category-banner">
+    <section
+      class="category-banner"
+      data-aos="fade-down"
+      data-aos-duration="600"
+    >
       <div class="text-box">
         <h1 class="title">Get in Touch</h1>
         <p class="txt">
@@ -116,7 +122,7 @@
     </section>
 
     <!-- contact-container -->
-    <div class="contact-container">
+    <div class="contact-container" data-aos="fade-up" data-aos-duration="600">
       <div class="item-container">
         <div class="item">
           <div class="icon">
@@ -168,7 +174,7 @@
     </div>
 
     <!-- start of send us a message -->
-    <div class="crop">
+    <div class="crop" data-aos="fade-up" data-aos-duration="600">
       <div class="message-container">
         <div class="input-container">
           <div class="left-box">
@@ -255,7 +261,7 @@
     <!-- end of send us a message -->
 
     <!-- start of ask  the question -->
-    <section class="faq-section">
+    <section class="faq-section" data-aos="fade-up" data-aos-duration="600">
       <div class="faq-container">
         <div class="faq-header">
           <h2>Frequently Asked Questions</h2>
@@ -359,7 +365,7 @@
     <!-- end of ask the question -->
 
     <!-- start of ready to start shopping -->
-    <section class="shopping-banner">
+    <section class="shopping-banner" data-aos="fade-up" data-aos-duration="600">
       <div class="banner-container">
         <h2>Ready to Start Shopping?</h2>
         <p>Explore our collection of sustainable fashion pieces</p>
@@ -370,5 +376,85 @@
       </div>
     </section>
     <!-- end of ready to start shopping -->
+
+    <!--start of  footer -->
+    <footer class="footer" data-aos="fade-up">
+      <div class="foot-container">
+        <!-- coloum 1 -->
+        <div class="item">
+          <h1>Panha store</h1>
+          <div class="qr">
+            <img
+              src="https://zand.sgp1.cdn.digitaloceanspaces.com/catalog/banner/2026/ZANDO/footer/download-app-white.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- end of colom1 -->
+
+        <!-- start of coloum2 -->
+        <div class="item">
+          <h1>Customer Care</h1>
+          <div class="for-link">
+            <a href="">Help center</a>
+            <a href="">Find a Store</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Return & exchange</a>
+            <a href="">Membership & benefit</a>
+          </div>
+        </div>
+        <!-- end of coloum2 -->
+        <div class="item">
+          <h1>Get in touch</h1>
+          <div class="for-link">
+            <a href="">+855 81 999 716 (Smart)</a>
+            <a href="">+855 61 330 330 (Cellcard)</a>
+            <a href="">customer.care@zandokh.com</a>
+            <a href="">Customer Support (Telegram)</a>
+            <a href="">PANHA Career (Telegram)</a>
+          </div>
+        </div>
+        <div class="item">
+          <h1>Follow us</h1>
+          <div class="for-link">
+            <a href="">Facebook</a>
+            <a href="">instagram</a>
+            <a href="">tiktok</a>
+            <a href="">youtube</a>
+          </div>
+        </div>
+        <div class="item">
+          <h1 class="unique">payment Method</h1>
+          <div class="payment">
+            <img
+              src="https://zand.sgp1.cdn.digitaloceanspaces.com/catalog/logo/web-footer/we-accept-payment%E2%80%93for-web-footer%E2%80%93v2.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <hr style="color: #555" />
+      <h1
+        style="
+          text-align: center;
+          color: white;
+          font-size: 14px;
+          margin-top: 10px;
+        "
+      >
+        © 2015 - 2026 Panha. All rights reserved.
+      </h1>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- AOS Script initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        once: true,
+        offset: 80,
+      });
+    </script>
   </body>
 </html>

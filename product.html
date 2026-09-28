@@ -7,14 +7,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/product.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <title>Product</title>
   </head>
   <body>
-
-      <!-- start of top-area -->
+    <!-- start of top-area -->
     <div class="top-area">
       <!-- start of bar1 -->
       <section class="bar-1">
@@ -101,21 +108,25 @@
     <!-- end of top-area -->
 
     <!-- category banner -->
-    <section class="category-banner">
+    <section
+      class="category-banner"
+      data-aos="fade-down"
+      data-aos-duration="600"
+    >
       <div class="text-box">
         <h1 class="title">Men</h1>
         <p class="txt">
-          Explore our man collection featuring our latest trent and timeless
-          classic
+          Explore our men's collection featuring our latest trends and timeless
+          classics
         </p>
-        <span class="found">5 product in man</span>
+        <span class="found">6 products in men</span>
       </div>
     </section>
 
     <!-- all product -->
     <section class="product-container">
       <!-- left-box -->
-      <div class="left-box">
+      <div class="left-box" data-aos="fade-right" data-aos-duration="600">
         <h1 class="title">Category</h1>
         <div class="item-box">
           <div class="box">
@@ -147,7 +158,6 @@
           </div>
         </div>
 
-        <!-- price-box for range -->
         <div class="price-box">
           <input type="range" min="10" max="500" value="250" />
           <div class="values">
@@ -219,7 +229,7 @@
         <h1 class="title-brand">Popular Brand</h1>
         <div class="select-box">
           <div><input type="checkbox" /> <span>Nike</span></div>
-          <div><input type="checkbox" /><span>Addida</span></div>
+          <div><input type="checkbox" /><span>Adidas</span></div>
           <div><input type="checkbox" /><span>Levi's</span></div>
           <div><input type="checkbox" /><span>Zara</span></div>
           <div><input type="checkbox" /><span>H&M</span></div>
@@ -229,90 +239,322 @@
 
       <!-- right-box -->
       <div class="right-box">
-        <div class="top-bar">
+        <div class="top-bar" data-aos="fade-down" data-aos-duration="600">
           <div class="filter-tab">
-              <div class="box">
-                <h1>All Product</h1>
-              </div>
-              <div class="box m1">
-                <h1 class="txt">on Sale</h1>
-              </div>
-              <div class="box m1">
-                <h1 class="txt">New Arrivals</h1>
-              </div>
-              <div class="box m1">
-                <h1 class="txt">Best Sellers</h1>
-              </div>
+            <div class="box">
+              <i class="fa-solid fa-border-all"></i>
+              <h1>All Product</h1>
             </div>
-            <div class="sort">
-              <h2>sort by:</h2>
-              <select name="" id="">
-                <option value="Feature">Feature</option>
-                <option value="Newest">Newest</option>
-                <option value="Price: Low to High">Price: Low to High</option>
-                <option value="Price: High to Low">Price: High to Low</option>
-                <option value="Top Rated">Top Rated</option>
-              </select>
+            <div class="box m1">
+              <i class="fa-solid fa-tag"></i>
+              <h1 class="txt">On Sale</h1>
+            </div>
+            <div class="box m1">
+              <i class="fa-solid fa-bolt"></i>
+              <h1 class="txt">New Arrivals</h1>
+            </div>
+            <div class="box m1">
+              <i class="fa-solid fa-fire"></i>
+              <h1 class="txt">Best Sellers</h1>
             </div>
           </div>
-          <div class="grid">
-            <div class="box">
-              <div class="img-box">
-                <img src="./image/shirt-2.jpg" alt="">
-                <div class="link-overlay">
-                  <a href="">
-                      <i class="fas fa-shopping-cart"></i>
-                    </a>
-                  <a href="">
-                    <i class="far fa-eye"></i>
-                    </a>
-                  <a href="">
-                    <i class="far fa-heart"></i>
-                    </a>
-                </div>
-                <div class="overlay">
-                  <div class="seller">BestSeller</div>
-                  <div class="seller black">Organic</div>
-                </div>
+          <div class="sort">
+            <h2>sort by:</h2>
+            <select name="" id="">
+              <option value="Feature">Feature</option>
+              <option value="Newest">Newest</option>
+              <option value="Price: Low to High">Price: Low to High</option>
+              <option value="Price: High to Low">Price: High to Low</option>
+              <option value="Top Rated">Top Rated</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Grid Container with AOS (No data-aos on inner cards to prevent hover bugs) -->
+        <div class="grid" data-aos="fade-up" data-aos-duration="700">
+          <!-- Card 1 -->
+          <div class="box">
+            <div class="img-box">
+              <img
+                src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=800&q=80"
+                alt="Classic Denim Jacket"
+              />
+              <div class="link-overlay">
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                <a href=""><i class="far fa-eye"></i></a>
+                <a href=""><i class="far fa-heart"></i></a>
               </div>
-              <div class="txt-box">
-                <h1 class="category">Men * Casule T-shirt</h1>
-                <h2 class="title">Premium Cotton T-shirt</h2>
-                <div class="star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <p>4.5(128)</p>
-                </div>
-                <div class="range">
-                  <p class="price">$79.99</p>
-                
-                    <p class="discount">$99.99</p>
-                    <p class="save-price">save $20.00</p>
-                </div>
-                <div class="select-color">
-                  <p>Colors: </p>
-                  <div class="circle blue"></div>
-                  <div class="circle black"></div>
-                  <div class="circle white"></div>
-                </div>
-                   <div class="btn">
-                  <span><i class="fa-solid fa-cart-shopping"></i></span>
-                  <button>Add To Cart</button>
-                </div>
-                </div>
+              <div class="overlay">
+                <div class="seller">BestSeller</div>
+                <div class="seller black">Organic</div>
+              </div>
+            </div>
+            <div class="txt-box">
+              <h1 class="category">Men * Casual Jacket</h1>
+              <h2 class="title">Classic Denim Jacket</h2>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>4.8(154)</p>
+              </div>
+              <div class="range">
+                <p class="price">$89.99</p>
+                <p class="discount">$119.99</p>
+                <p class="save-price">save $30.00</p>
+              </div>
+              <div class="select-color">
+                <p>Colors:</p>
+                <div class="circle blue"></div>
+                <div class="circle black"></div>
+                <div class="circle white"></div>
+              </div>
+              <div class="btn">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <button>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="box">
+            <div class="img-box">
+              <img
+                src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80"
+                alt="Premium Cotton T-shirt"
+              />
+              <div class="link-overlay">
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                <a href=""><i class="far fa-eye"></i></a>
+                <a href=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="overlay">
+                <div class="seller">BestSeller</div>
+                <div class="seller black">100% Cotton</div>
+              </div>
+            </div>
+            <div class="txt-box">
+              <h1 class="category">Men * Casual T-shirt</h1>
+              <h2 class="title">Premium Cotton T-shirt</h2>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>4.5(128)</p>
+              </div>
+              <div class="range">
+                <p class="price">$39.99</p>
+                <p class="discount">$49.99</p>
+                <p class="save-price">save $10.00</p>
+              </div>
+              <div class="select-color">
+                <p>Colors:</p>
+                <div class="circle blue"></div>
+                <div class="circle black"></div>
+                <div class="circle white"></div>
+              </div>
+              <div class="btn">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <button>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="box">
+            <div class="img-box">
+              <img
+                src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80"
+                alt="Urban Street Hoodie"
+              />
+              <div class="link-overlay">
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                <a href=""><i class="far fa-eye"></i></a>
+                <a href=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="overlay">
+                <div class="seller">Trending</div>
+                <div class="seller black">Streetwear</div>
+              </div>
+            </div>
+            <div class="txt-box">
+              <h1 class="category">Men * Streetwear</h1>
+              <h2 class="title">Urban Fleece Hoodie</h2>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>4.9(210)</p>
+              </div>
+              <div class="range">
+                <p class="price">$65.00</p>
+                <p class="discount">$85.00</p>
+                <p class="save-price">save $20.00</p>
+              </div>
+              <div class="select-color">
+                <p>Colors:</p>
+                <div class="circle blue"></div>
+                <div class="circle black"></div>
+                <div class="circle white"></div>
+              </div>
+              <div class="btn">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <button>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="box">
+            <div class="img-box">
+              <img
+                src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80"
+                alt="Linen Button Shirt"
+              />
+              <div class="link-overlay">
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                <a href=""><i class="far fa-eye"></i></a>
+                <a href=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="overlay">
+                <div class="seller">BestSeller</div>
+                <div class="seller black">Linen</div>
+              </div>
+            </div>
+            <div class="txt-box">
+              <h1 class="category">Men * Casual Shirts</h1>
+              <h2 class="title">Checkered Linen Shirt</h2>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>4.6(95)</p>
+              </div>
+              <div class="range">
+                <p class="price">$49.99</p>
+                <p class="discount">$69.99</p>
+                <p class="save-price">save $20.00</p>
+              </div>
+              <div class="select-color">
+                <p>Colors:</p>
+                <div class="circle blue"></div>
+                <div class="circle black"></div>
+                <div class="circle white"></div>
+              </div>
+              <div class="btn">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <button>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="box">
+            <div class="img-box">
+              <img
+                src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80"
+                alt="Biker Leather Jacket"
+              />
+              <div class="link-overlay">
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                <a href=""><i class="far fa-eye"></i></a>
+                <a href=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="overlay">
+                <div class="seller">Premium</div>
+                <div class="seller black">Leather</div>
+              </div>
+            </div>
+            <div class="txt-box">
+              <h1 class="category">Men * Jackets</h1>
+              <h2 class="title">Biker Leather Jacket</h2>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>4.9(340)</p>
+              </div>
+              <div class="range">
+                <p class="price">$149.00</p>
+                <p class="discount">$199.00</p>
+                <p class="save-price">save $50.00</p>
+              </div>
+              <div class="select-color">
+                <p>Colors:</p>
+                <div class="circle blue"></div>
+                <div class="circle black"></div>
+                <div class="circle white"></div>
+              </div>
+              <div class="btn">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <button>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="box">
+            <div class="img-box">
+              <img
+                src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80"
+                alt="Tailored Blazer"
+              />
+              <div class="link-overlay">
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                <a href=""><i class="far fa-eye"></i></a>
+                <a href=""><i class="far fa-heart"></i></a>
+              </div>
+              <div class="overlay">
+                <div class="seller">Exclusive</div>
+                <div class="seller black">Tailored</div>
+              </div>
+            </div>
+            <div class="txt-box">
+              <h1 class="category">Men * Smart Casual</h1>
+              <h2 class="title">Modern Tailored Blazer</h2>
+              <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>4.9(88)</p>
+              </div>
+              <div class="range">
+                <p class="price">$110.00</p>
+                <p class="discount">$150.00</p>
+                <p class="save-price">save $40.00</p>
+              </div>
+              <div class="select-color">
+                <p>Colors:</p>
+                <div class="circle blue"></div>
+                <div class="circle black"></div>
+                <div class="circle white"></div>
+              </div>
+              <div class="btn">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <button>Add To Cart</button>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </section>
 
-     <!--start of  footer -->
-    <footer class="footer">
+    <!--start of footer -->
+    <footer class="footer" data-aos="fade-up">
       <div class="foot-container">
-        <!-- coloum 1 -->
+        <!-- column 1 -->
         <div class="item">
           <h1>Panha store</h1>
           <div class="qr">
@@ -322,9 +564,9 @@
             />
           </div>
         </div>
-        <!-- end of colom1 -->
+        <!-- end of column 1 -->
 
-        <!-- start of coloum2 -->
+        <!-- start of column 2 -->
         <div class="item">
           <h1>Customer Care</h1>
           <div class="for-link">
@@ -335,7 +577,7 @@
             <a href="">Membership & benefit</a>
           </div>
         </div>
-        <!-- end of coloum2 -->
+        <!-- end of column 2 -->
         <div class="item">
           <h1>Get in touch</h1>
           <div class="for-link">
@@ -378,5 +620,15 @@
       </h1>
     </footer>
     <!-- end of footer -->
+
+    <!-- AOS Script initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        once: true,
+        offset: 60,
+      });
+    </script>
   </body>
 </html>

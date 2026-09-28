@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +11,7 @@
 }
 
 /* 1. Hero container */
-.hero-section {
+/* .hero-section {
   max-width: 1200px;
   margin: auto;
   padding: 50px 20px;
@@ -66,7 +71,229 @@
   display: block;
   margin: auto;
   border-radius: 10px;
+} */
+
+/* --- HERO SECTION --- */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Full screen viewport height */
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20, 10, 10, 0.92) 20%,
+      rgba(100, 25, 25, 0.6) 60%,
+      rgba(15, 5, 5, 0.8) 100%
+    ),
+    url("https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #ffffff;
 }
+
+.hero-container {
+  max-width: 1300px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  padding: 60px 0;
+}
+
+/* Pushes the text box safely inward away from the left arrow */
+.hero-content {
+  max-width: 540px;
+  margin-left: 50px; /* Moves text and buttons further to the right */
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Badge (Trending) */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fca5a5;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  width: fit-content;
+  backdrop-filter: blur(4px);
+}
+
+/* Subtitle */
+.hero-subtitle {
+  color: #cbd5e1;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* Big Title */
+.hero-title {
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Description */
+.hero-desc {
+  color: #e2e8f0;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 4px 0 8px 0;
+}
+
+/* Action Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.hero-buttons .btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.25s ease;
+}
+
+.hero-buttons .btn-green {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.hero-buttons .btn-green:hover {
+  background-color: #059669;
+}
+
+.hero-buttons .btn-glass {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
+}
+
+.hero-buttons .btn-glass:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Stats Row */
+.hero-stats {
+  display: flex;
+  gap: 35px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-stats .stat-item h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+}
+
+.hero-stats .stat-item p {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 2px 0 0 0;
+}
+
+/* Left & Right Slider Arrows */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 4;
+  backdrop-filter: blur(4px);
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.slider-arrow:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.slider-arrow.left {
+  left: 20px;
+}
+
+.slider-arrow.right {
+  right: 20px;
+}
+
+/* --- SLIDER INDICATOR BARS (Dashes at the bottom) --- */
+.slider-indicators {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 4;
+}
+
+.slider-indicators .indicator {
+  width: 32px; /* Wide bar instead of a circle */
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slider-indicators .indicator.active {
+  width: 50px; /* Highlighted active slide bar stretches longer */
+  background-color: #10b981; /* Green accent to match the button */
+}
+
+.slider-indicators .indicator:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .slider-arrow {
+    display: none;
+  }
+}
+
 /*start of  brand logo */
 .brand-logo {
   max-width: 1200px;

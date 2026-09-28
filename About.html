@@ -13,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/About.css" />
@@ -106,7 +108,7 @@
     <!-- end of top-area -->
 
     <!-- story banner -->
-    <section class="story-banner">
+    <section class="story-banner" data-aos="fade-down" data-aos-duration="600">
       <div class="text-box">
         <h1 class="title">Our Story</h1>
         <p class="txt">
@@ -120,7 +122,7 @@
     </section>
 
     <!-- our misssion -->
-    <div class="txt-box">
+    <div class="txt-box" data-aos="fade-up" data-aos-duration="600">
       <h1 class="title">Our Mission</h1>
       <p class="desc">
         To make sustainabel fashion accessible to everyone, creating beautiful
@@ -130,7 +132,11 @@
     </div>
 
     <!-- service-section -->
-    <section class="service-container">
+    <section
+      class="service-container"
+      data-aos="fade-up"
+      data-aos-duration="600"
+    >
       <div class="box">
         <h1 class="title">500k+</h1>
         <p>
@@ -170,7 +176,7 @@
     </section>
 
     <!-- our core value -->
-    <section class="core-values">
+    <section class="core-values" data-aos="fade-up" data-aos-duration="600">
       <h1 class="title">Our Core Values</h1>
       <div class="values-container">
         <div class="value-item">
@@ -232,7 +238,7 @@
     </section>
 
     <!-- our story that begin -->
-    <section class="story-tab">
+    <section class="story-tab" data-aos="fade-up" data-aos-duration="600">
       <div class="nav-item">
         <div class="item">
           <span> <i class="fa-solid fa-book"></i></span>
@@ -248,7 +254,7 @@
         </div>
       </div>
     </section>
-    <section class="begin-story">
+    <section class="begin-story" data-aos="fade-up" data-aos-duration="600">
       <h1 class="title">How it All Began</h1>
       <div class="item-box">
         <div class="left-box">
@@ -276,14 +282,14 @@
     </section>
 
     <!-- Meet our team -->
-    <div class="team-title">
+    <div class="team-title" data-aos="fade-up" data-aos-duration="600">
       <h1>Meet our Team</h1>
       <p>
         passinate individuals dedicated to revolutionizing the fashion industry
       </p>
     </div>
 
-    <div class="profile-team">
+    <div class="profile-team" data-aos="fade-up" data-aos-duration="600">
       <div class="member">
         <div class="img-box">
           <img src="./image/profile-1.jpg" alt="" />
@@ -367,7 +373,7 @@
     </div>
 
     <!-- Our sustainability -->
-    <section class="Sustainability">
+    <section class="Sustainability" data-aos="fade-up" data-aos-duration="600">
       <div class="sus-title">
         <h1>Our Sustainability Commitment</h1>
         <p class="txt">Building a better future through responsible fashion</p>
@@ -422,8 +428,11 @@
     </section>
 
     <!-- start of last our fashion revolution -->
-    <!-- end of last our fashion revolution -->
-    <section class="fashion-container">
+    <section
+      class="fashion-container"
+      data-aos="fade-up"
+      data-aos-duration="600"
+    >
       <div class="bar-title">
         <h1 class="title-fashion">Join our Fashion Revolution</h1>
         <p class="desc-fas">
@@ -440,8 +449,8 @@
       </div>
     </section>
 
-    <!--start of  footer -->
-    <footer class="footer">
+    <!--start of footer -->
+    <footer class="footer" data-aos="fade-up">
       <div class="foot-container">
         <!-- coloum 1 -->
         <div class="item">
@@ -509,6 +518,15 @@
       </h1>
     </footer>
     <!-- end of footer -->
+
+    <!-- AOS Script initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        once: true,
+        offset: 80,
+      });
+    </script>
   </body>
 </html>
-=

@@ -4,6 +4,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 .category-banner {
   background: linear-gradient(90deg, #3730a3, #5b21b6, #7c3aed);
   min-height: 250px;
@@ -186,28 +192,48 @@
 }
 .product-container .right-box .top-bar .filter-tab .box {
   background-color: #4f46e5;
-  padding: 10px 15px;
+  padding: 9px 16px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+.product-container .right-box .top-bar .filter-tab .box i {
+  color: white;
+  font-size: 13px;
 }
 .product-container .right-box .top-bar .filter-tab .box.m1 {
   background-color: #f3f4f6;
   transition: all 0.3s ease-in-out;
 }
+.product-container .right-box .top-bar .filter-tab .box.m1 i {
+  color: #374151;
+  font-size: 13px;
+  transition: all 0.3s ease-in-out;
+}
 .product-container .right-box .top-bar .filter-tab .box.m1:hover {
   background-color: #4f46e5;
+}
+.product-container .right-box .top-bar .filter-tab .box.m1:hover i {
+  color: white;
 }
 
 .product-container .right-box .top-bar .filter-tab .box.m1 .txt {
   color: #374151;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1;
   transition: all 0.3s ease-in-out;
 }
 .product-container .right-box .top-bar .filter-tab .box.m1 .txt:hover {
   color: white;
 }
 .product-container .right-box .top-bar .filter-tab .box h1 {
-  font-size: 15px;
+  font-size: 13.5px;
+  font-weight: 600;
+  line-height: 1;
   color: white;
-  /* font-weight: normal; */
 }
 .product-container .right-box .top-bar .sort {
   display: flex;
@@ -216,12 +242,14 @@
 }
 .product-container .right-box .top-bar .sort h2 {
   color: #374151;
-  font-size: 17px;
+  font-size: 14px;
+  white-space: nowrap;
 }
 .product-container .right-box .top-bar .sort select {
-  padding: 10px 15px;
+  padding: 8px 14px;
+  font-size: 13px;
   background-color: transparent;
-  border: 1px solid gray;
+  border: 1px solid #d1d5db;
   outline: none;
   border-radius: 8px;
 }
@@ -238,19 +266,25 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
+
+/* Card Container with smooth hover transition */
 .product-container .right-box .grid .box {
-  height: 400px;
+  height: 450px;
   display: grid;
   grid-template-rows: 50% 50%;
   overflow: hidden;
   box-shadow: 0px 0px 10px gray;
   border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  transition:
+    transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   position: relative;
+  will-change: transform;
 }
 .product-container .right-box .grid .box:hover {
-  transform: scale(1.04);
-  z-index: 1;
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.18);
+  z-index: 5;
 }
 
 /* image area */
@@ -266,10 +300,10 @@
   object-position: top;
 }
 
-/* icons: hidden below the image by default */
+/* icons: hidden below image by default */
 .product-container .right-box .grid .box .img-box .link-overlay {
   position: absolute;
-  bottom: -50px;
+  bottom: -60px;
   left: 0;
   width: 100%;
   padding: 10px;
@@ -277,27 +311,29 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  transition: all 0.3s ease;
+  transition: bottom 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-/* hover on the WHOLE box slides the icons up (this is the fix) */
+/* slide up smoothly when hovering card */
 .product-container .right-box .grid .box:hover .img-box .link-overlay {
-  bottom: 0;
+  bottom: 0px;
 }
 .product-container .right-box .grid .box .img-box .link-overlay a {
   text-decoration: none;
   color: black;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
 }
 .product-container .right-box .grid .box .img-box .link-overlay a:hover {
   background-color: #2563eb;
   color: white;
+  transform: scale(1.15);
 }
 
 /* badges: BestSeller / Organic */
